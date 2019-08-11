@@ -1,0 +1,26 @@
+# /etc/conf.d/noded: config file for /etc/init.d/noded
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/node/node.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/noded"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/noded.pid"
+
+# Where to write noded data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/noded"
+
+# User and group to own noded process
+#BITCOIND_USER="node"
+#BITCOIND_GROUP="node"
+
+# Path to noded executable
+#BITCOIND_BIN="/usr/bin/noded"
+
+# Nice value to run noded under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,11 @@
+[Protocol]
+exec=node-qt '%u'
+protocol=node
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
