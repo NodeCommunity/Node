@@ -83,7 +83,7 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of node to install
-TARBALLURL="https://github.com/node/Node/releases/download/1.1.0/node-1.1.0-x86_64-linux-gnu.tar.gz"
+TARBALLURL="https://github.com/NodeCommunity/Node/releases/download/1.1.0/node-1.1.0-x86_64-linux-gnu.tar.gz"
 TARBALLNAME="node-1.1.0-x86_64-linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
