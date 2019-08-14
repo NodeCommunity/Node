@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000f9af9f4226270ec5f6bfaec85935034088070419f61793113ff3b7c88c4"));
+    (0, uint256("0x00000c03687e1e2f4fe54cea072e09f540fae9fe5c1dad9d1174f3d505ba2a36"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1541642608, // * UNIX timestamp of last checkpoint block
+    1565790253, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -121,7 +121,7 @@ public:
 
          */
 
-        const char* pszTimestamp = "I am creating Triskel Premium today - 11/07/2018";
+        const char* pszTimestamp = "I am creating Node today 08/14/2019";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -132,13 +132,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1541642608;
+        genesis.nTime = 1565790253;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21910915;
+        genesis.nNonce = 23583090;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000f9af9f4226270ec5f6bfaec85935034088070419f61793113ff3b7c88c4"));
-        assert(genesis.hashMerkleRoot == uint256("0xf4d257ee72bb0aa74239eba3d93109df7ede4461dc651f936e3520e4135d98d8"));
+        assert(hashGenesisBlock == uint256("0x00000c03687e1e2f4fe54cea072e09f540fae9fe5c1dad9d1174f3d505ba2a36"));
+        assert(genesis.hashMerkleRoot == uint256("0x535ed5a0a79a526950aa91f9bb2b948e6b2072d3e9f404a6103b9093a2c3b51b"));
 
     
         // DNS Seeding
@@ -216,8 +216,8 @@ public:
         nMaxMoneyOut = 1000000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1516926684;
-        genesis.nNonce = 21256609;
+        genesis.nTime = 1565790253;
+        genesis.nNonce = 23583090;
 
         hashGenesisBlock = genesis.GetHash();
        // assert(hashGenesisBlock == uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
@@ -284,9 +284,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Node: 1 day
         nTargetSpacing = 2 * 60;        // Node: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1516926684;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 20542300;
+        genesis.nTime = 1565790253;
+        genesis.nBits = 0x1e0ffff0;
+        genesis.nNonce = 23583090;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 28155;
